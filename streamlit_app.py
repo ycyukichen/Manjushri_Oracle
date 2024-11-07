@@ -29,7 +29,7 @@ if st.button("開始占卜"):
 
     # 顯示訊號及解釋
     st.write("### 訊號")
-    st.write(f"**訊號**：{selected_card['訊號']}")
+    st.write(f"**訊號**:{selected_card['訊號']}")
     st.write("### 訊號解釋")
     for line in selected_card['訊號解釋']:
         st.write(line)
@@ -42,7 +42,7 @@ if st.button("開始占卜"):
     # 僅顯示所詢問面向的解釋
     for aspect, explanation in interpretations.items():
         if aspect in selected_aspects:
-            st.write(f"**{aspect}**：")
+            st.write(f"**{aspect}**:")
             if isinstance(explanation, list):  # 多行內容的處理
                 for line in explanation:
                     st.write(line)
