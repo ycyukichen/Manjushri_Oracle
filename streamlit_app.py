@@ -13,7 +13,7 @@ st.set_page_config(page_title="文殊卦占卜", layout="centered")
 st.markdown("<h1 style='text-align: center;'>文殊卦占卜</h1>", unsafe_allow_html=True)
 st.markdown("<h6 style='text-align: center;'>源自文殊師利菩薩占卜牌卡，提供靈性指引，占卜結果僅供參考</h6>", unsafe_allow_html=True)
 
-image = Image.open('manjushri.jpeg') 
+image = Image.open('Ｍanjushri.jpeg') 
 st.image(image, use_column_width=True)
 
 st.write("**占卜規則:** ")
